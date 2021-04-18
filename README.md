@@ -1,11 +1,6 @@
 # GCC-v
 
-### Greedy Clustering Coefficient and its Variants
+### Greedy Clustering Coefficient algorithm and its Variants
 
-GCC-v is a network clustering algorithm that can be used to find protein complexes from protein-protein interaction networks(PPINs). Depending on weather you want to consider the weights of interactions into the algorithm or you want to find overlapping clusters, the four versions are introduced. To calculate the node score, one can use 
-
-GCC-v is written in python. The algorithm is parameter-free thereby there is no need to pass any variables to the function.
-
-To run the program you need to call main_Function.py and pass your network to that.
-
-You can find PPINs for S. cerevisiae, H. sapiens, and escherichia coli (E. coli)  with their gold standards in their respective folders. 
+Identification of protein complexes from protein-protein interaction (PPI) networks is a key problem in PPI mining, and current solutions are parameter-dependent and suffer from small recall rates. Here we introduce GCC-v, a family of parameter-free algorithms to accurately predict protein complexes based on the clustering coefficient. GCC-v is easy to implement, scales with the network size, and provides insights in the hierarchical organization of PPIs. Through comparative analyses with gold standards and PPI networks from Escherichia coli, Saccharomyces cerevisiae, and Homo sapiens, we demonstrate that GCC-v outperforms twelve state-of-the-art approaches for identification of protein complexes by at least 25.6% with respect to twelve performance measures. We also show that GCC-v results in the exact recovery of ~ 35% of protein complexes in a pan-plant PPI network, and in 144 putative protein complexes in Arabidopsis thaliana, corroborated with knowledge on domain-domain interactions. We show that findings by GCC-v are not affected by network perturbations, which has direct implications on assessing the impact of the PPI network quality on the predicted protein complexes. 
+The implementation of each version including an example is available in separate Jupyter notebook.
